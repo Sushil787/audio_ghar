@@ -1,10 +1,4 @@
-// import 'package:flutter/material.dart';
 
-// // Color baseColor = const Color.fromARGB(255, 52, 50, 50);
-// // Color baseColor = const Color(0xFF150E08);
-// // Color baseColor = const Color(0xFF7E420C);
-// Color baseColor = const Color(0xFF150E08);
-// Color backGroundColor = const Color.fromARGB(255, 255, 255, 255);
 import 'package:flutter/material.dart';
 
 /// Class Containing Color in Light Theme
