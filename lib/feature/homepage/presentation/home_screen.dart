@@ -142,7 +142,7 @@ class BuildTabBar extends StatefulWidget {
 }
 
 class _BuildTabBarState extends State<BuildTabBar> {
-  int _selceted = 0;
+  int _selected = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -159,7 +159,7 @@ class _BuildTabBarState extends State<BuildTabBar> {
                 return GestureDetector(
                   onTap: () {
                     setState(() {
-                      _selceted = index;
+                      _selected = index;
                     });
                   },
                   child: Padding(
@@ -170,7 +170,9 @@ class _BuildTabBarState extends State<BuildTabBar> {
                       ),
                       alignment: Alignment.center,
                       decoration: BoxDecoration(
-                          color: _selceted == index ? LightColor.orange : null,
+                          color: _selected == index
+                              ? Colors.orange.shade200
+                              : null,
                           border: Border.all(color: LightColor.secondaryColor),
                           borderRadius: BorderRadius.circular(
                             5,
